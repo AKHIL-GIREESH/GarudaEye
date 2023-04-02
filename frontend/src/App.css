@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.MobApp > div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.MobApp > div > p{
+  width: 60vw;
+}
