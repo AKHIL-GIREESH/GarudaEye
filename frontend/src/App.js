@@ -1,11 +1,30 @@
 import './App.css';
 import logo from "./Garudeye.png"
+import {motion} from "framer-motion"
 
 function App() {
   return (
     <div className="App">
+      <motion.div
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
       <img src={logo}></img>
-      <div className="About">
+      </motion.div>
+      <motion.div
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
           <h2>About</h2>
           <p>GarudEye is an innovative app designed to raise awareness and provide warnings about wildlife encounters near roadlines and residential areas in India. Our app is installed in strategic locations to detect wildlife movement and provide essential information to local authorities and nearby residents.
 
@@ -14,15 +33,23 @@ function App() {
             Our app prioritizes the safety of both wildlife and humans in India, providing important information on how to avoid dangerous wildlife encounters and what to do in case of an attack. We also work to report and prevent illegal wildlife activities that endanger both humans and animals.
 
             Join us in our mission to promote coexistence between humans and wildlife in India. By downloading GarudEye, you can help raise awareness and protect both humans and wildlife in India by reporting and preventing illegal wildlife activities that endanger both humans and animals.</p>
-      </div>
-      <div className="MobApp">
+      </motion.div>
+      <motion.div className="MobApp"
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 1 }}
+      variants={{
+      visible: { opacity: 1, scale: 1 },
+      hidden: { opacity: 0, scale: 0 },
+      }}
+      >
       <div>
         <h2>Mobile App</h2>
         <p>Lorem ipsum dolor sit amet. Ut libero voluptates non libero galisum aut deserunt enim eos voluptas autem qui quaerat omnis. Aut praesentium doloremque et nemo dolorem aut incidunt nostrum hic odit repellendus. Et voluptas voluptas sed eligendi harum qui tempora amet ex architecto consequatur. Ut atque aperiam in inventore inventore eos illum rerum.
         A consequatur voluptas eum maxime dicta id totam repudiandae est laboriosam aliquid non repudiandae eligendi? Vel harum earum quo aliquid dolores et eius dicta sit vero itaque sed unde sapiente cum maiores quaerat nam reprehenderit nostrum. Rem nihil pariatur et modi internos vel adipisci tempore qui iusto unde et explicabo dolorum eum voluptas totam.</p>
       </div>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/IPhone_14_Pro_vector.svg/220px-IPhone_14_Pro_vector.svg.png" alt="phone"></img>
-      </div>
+      </motion.div>
       <div className="API">
       <h2>API</h2>
       <p>Lorem ipsum dolor sit amet. Ut libero voluptates non libero galisum aut deserunt enim eos voluptas autem qui quaerat omnis. Aut praesentium doloremque et nemo dolorem aut incidunt nostrum hic odit repellendus. Et voluptas voluptas sed eligendi harum qui tempora amet ex architecto consequatur. Ut atque aperiam in inventore inventore eos illum rerum.</p>
