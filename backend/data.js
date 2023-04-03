@@ -1,5 +1,6 @@
 const data = {
     Kerala1: {
+        id:1,
         elephant:10,
         tiger:12,
         animal3:4,
@@ -7,6 +8,7 @@ const data = {
         animal5:6
     },
     Kerala2: {
+        id:2,
         elephant:11,
         tiger:10,
         animal3:8,

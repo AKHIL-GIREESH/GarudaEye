@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width:90vw;
 }
 
 .App-logo {
@@ -37,11 +38,33 @@
   }
 }
 
-.MobApp > div{
+.MobApp{
   display: flex;
   justify-content: space-around;
 }
 
+.MobApp > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .MobApp > div > p{
   width: 60vw;
+}
+
+h1{
+  font-size: 6em;
+}
+
+h2{
+  font-size: 3em;
+}
+
+p{
+  font-size: 1.2em;
+}
+
+img{
+  width:25vw
 }
