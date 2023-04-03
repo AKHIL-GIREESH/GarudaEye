@@ -59,6 +59,7 @@ h1{
 
 h2{
   font-size: 3em;
+  font-weight: 600;
 }
 
 p{
@@ -67,4 +68,22 @@ p{
 
 img{
   width:25vw
+}
+
+@media (max-width:600px){
+
+  .MobApp{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .MobApp  > div >p{
+    width: 100%;
+  }
+
+  .MobApp > img{
+    width:80vw
+  }
+
 }

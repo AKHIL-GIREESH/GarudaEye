@@ -29,7 +29,14 @@ function App() {
       <br/>https://api.spotify.com/v1/albums/id
       </div>
       <footer>
-        Contact Us
+        <h2>Contact Us</h2>
+        <div>
+          Twitter
+          LinkedIn
+          Facebook
+          Instagram
+          Mail
+        </div>
       </footer>
     </div>
   );
